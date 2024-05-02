@@ -50,11 +50,13 @@ class RecipeController extends Controller
             'cuisines' => 'nullable|string',
             'dish_preference' => 'nullable|string',
             'cook_time' => 'nullable|string',
+            'vegetarian' => 'nullable|string',
             'about' => 'nullable|string',
         ]);
 
         // Extract the title from the validated data
         $title = $validatedData['title'];
+        $vegetarianPreference = $validatedData['vegetarian'];
         $healthData = HealthData::where('user_id', auth()->id())->first();
 
         // Form the prompt message
@@ -67,6 +69,7 @@ class RecipeController extends Controller
         "Gender: " . $healthData->gender . ", " . 
         "Condition: " . $healthData->condition . ", " . 
         "Ethnicity: " . $healthData->ethnicity . ", " . 
+        "Vegetarian: " . $vegetarianPreference . ". " .
         "About me: " . $healthData->about . ". " . 
         "I prioritize health-conscious options and would appreciate recommendations for nutritious and delicious dishes. " . 
         "Could you kindly suggest a recipe that meets these criteria? The format should include details on ingredients, instructions, and any helpful tips. " . 
@@ -191,12 +194,4 @@ class RecipeController extends Controller
         return redirect()->route('recipe.index')->with('success', 'Recipe deleted successfully.');
         
     }
-    
-    public function search(Request $request)
-    {
-        $query = $request->input('query');
-        $recipes = Recipe::where('title', 'like', '%' . $query . '%')->get();
-        return view('recipes.index', compact('recipes'));
-    }
-
 }

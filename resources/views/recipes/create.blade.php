@@ -11,28 +11,32 @@
 
                 <div class="border-b border-gray-900/10 pb-12">
                     <h2 class="text-base font-semibold leading-7 text-gray-900">Personal Information</h2>
-                    <p class="mt-1 text-sm leading-6 text-gray-600">Be careful what you share.</p>
+                    <p class="mt-1 text-sm leading-6 text-gray-600">Your details help us serve you better!</p>
                 
                     <div class="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
 
                         <div class="sm:col-span-6">
                             <label for="title" class="block text-sm font-medium leading-6 text-gray-900">Create a name for this Reco ?</label>
                             <div class="mt-2">
-                                <input type="text" name="title" id="title" required class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                                <input type="text" name="title" id="title" placeholder="e.g., Healthy Breakfast Smoothi" required class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
                             </div>
                         </div>
 
                         <div class="sm:col-span-6">
-                            <label for="dietary_restrictions" class="block text-sm font-medium leading-6 text-gray-900">Do you have any dietary restrictions ?</label>
+                            <label for="vegetarian" class="block text-sm font-medium leading-6 text-gray-900">Do you follow a vegetarian diet?</label>
                             <div class="mt-2">
-                                <input type="text" name="dietary_restrictions" id="dietary_restrictions" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                                <select name="vegetarian" id="vegetarian" class="block w-full rounded-md border-0 py-1.5 pl-3 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                                    <option value="">Select your preference</option>
+                                    <option value="vegetarian">Yes, I'm vegetarian</option>
+                                    <option value="non-vegetarian">No, I'm not vegetarian</option>
+                                </select>
                             </div>
-                        </div>
+                        </div>                        
                 
                         <div class="sm:col-span-6">
                             <label for="cuisines" class="block text-sm font-medium leading-6 text-gray-900">Are there any cuisines you particularly enjoy or dislike?</label>
                             <div class="mt-2">
-                                <input type="text" name="cuisines" id="cuisines" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                                <input type="text" name="cuisines" id="cuisines" placeholder="e.g., Italian, Mexican, Asian" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
                             </div>
                         </div>
                 
@@ -40,7 +44,7 @@
                             <label for="dish_preference" class="block text-sm font-medium leading-6 text-gray-900">Do you have a preference for the type of dish (e.g., breakfast, lunch, dinner, snack, dessert)?</label>
                             <div class="mt-2">
                                 <select name="dish_preference" id="dish_preference" class="block w-full rounded-md border-0 py-1.5 pl-3 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
-                                    <option value="">Select preference</option>
+                                    <option value="">e.g., Breakfast, Lunch, Dinner</option>
                                     <option value="Breakfast">Breakfast</option>
                                     <option value="Lunch">Lunch</option>
                                     <option value="Dinner">Dinner</option>
@@ -53,19 +57,19 @@
                         <div class="sm:col-span-6">
                             <label for="cook_time" class="block text-sm font-medium leading-6 text-gray-900">Are you looking for something quick and easy, or do you have more time to cook?</label>
                             <div class="mt-2">
-                                <input type="text" name="cook_time" id="cook_time" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                                <input type="text" name="cook_time" id="cook_time" placeholder="e.g., 30 minutes, 1 hour" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
                             </div>
                         </div>
                 
                         <div class="col-span-full">
                             <label for="about" class="block text-sm font-medium leading-6 text-gray-900">Anything you want to say?</label>
                             <div class="mt-2">
-                                <textarea id="about" name="about" rows="3" placeholder="Best recipes? etc." class="block w-full rounded-md border-0 py-1.5 pl-3 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"></textarea>
+                                <textarea id="about" name="about" rows="3" placeholder="Use this space to tell us about your dietary needs. Feel free to mention any food allergies, dislikes, or special diets you follow." class="block w-full rounded-md border-0 py-1.5 pl-3 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"></textarea>
                             </div>
-                            <p class="mt-3 text-sm leading-6 text-gray-600">Write a few sentences about yourself.</p>
                         </div>
 
                         <div class="col-span-full">
+                            <label for="about" class="block text-sm font-medium leading-6 text-gray-900">Completing Setup</label>
                             <label for="Option1" class="flex cursor-pointer items-start gap-4 py-4">
                                 <div class="flex items-center">
                                   &#8203;

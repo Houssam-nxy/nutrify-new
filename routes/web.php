@@ -49,6 +49,4 @@ Route::resource('/recipe', RecipeController::class)->middleware(['auth'])->names
     'destroy' => 'recipe.destroy',
 ]);
 
-Route::get('/recipes/search', [RecipeController::class, 'search'])->name('recipes.search');
-
 require __DIR__.'/auth.php';
