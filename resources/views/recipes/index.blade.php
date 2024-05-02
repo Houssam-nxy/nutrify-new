@@ -6,7 +6,7 @@
         
         <div class="relative flex flex-col text-gray-700 bg-white shadow-md w-full rounded-md bg-clip-border">
             <div class="flex justify-between p-4">
-<<<<<<< HEAD
+
                 <div class="text-lg text-blue-gray-700 font-semibold p-3">All recipes created</div>
                     <div>
                         <a href="{{ route('recipe.create') }}" class="group relative inline-flex items-center overflow-hidden rounded bg-[#14532d] px-8 py-3 text-white focus:outline-none focus:ring active:bg-indigo-500">
@@ -34,19 +34,9 @@
                 </div>
             </span>
 
-=======
-            <div class="text-lg text-blue-gray-700 font-semibold p-3">All recipes created</div>
-                <div>
-                    <a href="{{ route('recipe.create') }}" class="group relative inline-flex items-center overflow-hidden rounded bg-[#14532d] px-8 py-3 text-white focus:outline-none focus:ring active:bg-indigo-500">
-                        <span class="absolute -end-full transition-all group-hover:end-4">
-                            <svg class="size-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
-                        </span>
-                        <span class="text-sm font-medium transition-all group-hover:me-4"> Add </span>
-                    </a>
-                </div>
-            </div>
-            <hr>
->>>>>>> origin/main
+
+            
+
             <nav class="flex min-w-[240px] flex-col gap-1 p-2 font-sans text-base font-normal text-blue-gray-700">
 
                 @if (count($recipes) > 0)
@@ -54,11 +44,8 @@
                     <a href="{{ route('recipe.show', $recipe->id) }}">
                         <div role="button"class="flex items-center w-full p-3 py-1 pl-4 pr-1 leading-tight transition-all rounded-md outline-none text-start hover:bg-gray-100 hover:text-black">
                             <div class="">
-<<<<<<< HEAD
+
                                     <div class="mr-auto"><p class="text-gray-700 capitalize">{{ $recipe->title }}</p></div>
-=======
-                                    <div class="mr-auto"><p class="text-gray-700">{{ $recipe->title }}</p></div>
->>>>>>> origin/main
                                     <br>
                                     <div class="text-xs pl-3 text-blue-gray-500">Created : Gemini</div>
                                 
@@ -94,14 +81,14 @@
        </div>
     </div>
  
-<<<<<<< HEAD
+
 
 
 
     
 
 
-=======
->>>>>>> origin/main
+
+
  </x-app-layout>
    

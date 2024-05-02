@@ -58,7 +58,7 @@ class RecipeController extends Controller
         $healthData = HealthData::where('user_id', auth()->id())->first();
 
         // Form the prompt message
-        $prompt = "Greetings! I'm seeking a personalized recipe recommendation that aligns with my dietary preferences and health profile. Here's a snapshot of my details: " . 
+        $prompt = "Greetings! I'm seeking a personalized healthy recipe recommendation that aligns with my dietary preferences and health profile. Here's a snapshot of my details: " . 
         json_encode($validatedData) . 
         "Additionally, for a more comprehensive view of my health, here are some specifics: " . 
         "Height: " . $healthData->height . ", " . 
@@ -77,10 +77,8 @@ class RecipeController extends Controller
                 <br>
                 <br>
                 <ul class='list-disc ml-4 text-sm'>
-                    <li><strong>Option 1:</strong> Time example (15 mins)</li>
-                    <li><strong>Option 2:</strong> Time example (30 mins)</li>
-                    <li><strong>Option 3:</strong> Time example (10 mins)</li>
-                    <li><strong>Example (Difficulty):</strong> Example (Easy)</li>
+                    <li><strong>add time here</strong><!-- (Time) --></li>
+                    <li><strong>Add Difficulty here</strong><!-- (Easy - medium - difficult) --></li>
                 </ul>
                 <br>
                 <h2>Ingredients:</h2>

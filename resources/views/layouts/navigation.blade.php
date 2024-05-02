@@ -1,9 +1,9 @@
-<<<<<<< HEAD
-=======
+
+
 <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 
 
->>>>>>> origin/main
+
 <nav class="fixed top-0 z-50 w-full bg-white border-b border-gray-200 dark:bg-gray-800 dark:border-gray-700">
     <div class="px-3 py-3 lg:px-5 lg:pl-3">
       <div class="flex items-center justify-between">
@@ -24,11 +24,9 @@
               <div>
                 <button type="button" class="flex text-sm bg-gray-800 rounded-full focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600" aria-expanded="false" data-dropdown-toggle="dropdown-user">
                   <span class="sr-only">Open user menu</span>
-<<<<<<< HEAD
+
                   <img class="w-10 h-10 rounded-full" src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="user photo">
-=======
-                  <img class="w-8 h-8 rounded-full py-1 border-[#14532d]" src="https://images.unsplash.com/photo-1506863530036-1efeddceb993?q=80&w=1344&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="user photo">
->>>>>>> origin/main
+
                 </button>
               </div>
               <div class="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded shadow dark:bg-gray-700 dark:divide-gray-600" id="dropdown-user">
@@ -106,7 +104,7 @@
            </a>
          </li>
        </ul>
-<<<<<<< HEAD
+
 
         <div id="dropdown-cta" class="p-4 mt-6 rounded-lg bg-green-50 dark:bg-green-900" role="alert">
             <div class="flex items-center mb-3">
@@ -124,8 +122,8 @@
             <a href="https://github.com/Houssam-nxy" target="blank" class="text-sm text-green-800 underline font-medium hover:text-green-900 dark:text-green-400 dark:hover:text-green-300">My GitHub</a>
         </div>
 
-=======
->>>>>>> origin/main
+
+
      </div>
    </aside>
    

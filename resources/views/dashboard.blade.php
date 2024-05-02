@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
@@ -88,46 +87,4 @@
 
     </body>
 </html>
-=======
-<x-app-layout>
 
-    <div class="p-4 sm:ml-64">
-        <div class="p-4 bg-white rounded-lg shadow-md dark:bg-gray-800 mt-10">
-
-            <div class="flex flex-col space-y-4">
-                <div class="text-center">
-                    <h2 class="text-3xl font-semibold text-gray-900 dark:text-white">Welcome to Nutrify</h2>
-                    <p class="mt-2 text-sm text-gray-600 dark:text-gray-300">Your user-friendly platform for effortless meal planning and nutrition management.</p>
-                </div>
-
-                <div>
-                    <p class="text-lg text-gray-800 dark:text-gray-200">Whether you're aiming to improve your health, accommodate dietary restrictions, or simply explore new recipes, Nutrify is here to help.</p>
-                </div>
-
-                <div>
-                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white cursor-pointer">
-                        <span class="text-green-900 hidden group-hover:inline">#</span> Key Feature
-                    </h3>
-                    
-                    <ul class="mt-4 text-gray-800 dark:text-gray-300">
-                        <li class="mt-2"><span class="font-semibold">1. Personalized Meal Planning:</span> Input your dietary preferences, health goals, and taste preferences to receive customized meal suggestions tailored to your unique needs.</li>
-                        <li class="mt-2"><span class="font-semibold">2. AI-Powered Recipe Generation:</span> Our advanced AI technology generates recipe recommendations based on your profile, ensuring that you receive delicious and nutritious meal ideas. Powered by the Gemini AI.</li>
-                        <li class="mt-2"><span class="font-semibold">3. Interactive Interface:</span> Explore a user-friendly interface that makes it easy to browse recipes, organize meal plans, and track your progress towards your health goals.</li>
-                        <li class="mt-2"><span class="font-semibold">4. Save and Favorite:</span> Save your favorite recipes and meal plans for quick access, making it convenient to revisit and reuse your preferred options.</li>
-                        <li class="mt-2"><span class="font-semibold">5. Community Engagement:</span> Connect with like-minded individuals, share recipe ideas, and join discussions on nutrition and healthy living in our vibrant community forum.</li>
-                    </ul>
-                </div>
-
-                <div>
-                    <p class="text-lg text-gray-800 dark:text-gray-200">Experience the convenience and simplicity of meal planning with Nutrify.</p>
-                </div>
-
-            </div>
-
-            <br>
-
-        </div>
-    </div>
-
-</x-app-layout>
->>>>>>> origin/main
