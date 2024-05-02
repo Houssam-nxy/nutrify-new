@@ -18,9 +18,6 @@ return new class extends Migration
             $table->foreignId('user_id')->constrained()->onDelete('cascade');
             $table->string('title')->nullable();
             $table->text('description')->nullable();
-            $table->text('instructions')->nullable();
-            $table->json('ingredients')->nullable();
-            $table->json('nutritional_information')->nullable();
             $table->timestamps();
         });
     }
